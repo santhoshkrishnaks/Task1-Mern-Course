@@ -156,9 +156,7 @@ button {
     width: 250px;
     cursor: pointer;
 }
-.attribution{
-    margin-top: 5%;
-}
+
 @media screen and (max-width:575px){
     *{
         margin: 0px;
