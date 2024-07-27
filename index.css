@@ -1,7 +1,6 @@
 
 body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family:"Hanken Grotesk", sans-serif;
@@ -156,7 +155,6 @@ button {
     width: 250px;
     cursor: pointer;
 }
-
 @media screen and (max-width:575px){
     *{
         margin: 0px;
@@ -173,25 +171,25 @@ button {
         display: flex;
         margin-top: 0;
         flex-direction: column;
-        width: 99vw;
+        width: 98vw;
         background: #fff;
-        border-radius: 0px;
+        border-radius: 0px; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         height: max-content;
     }
     
     .result {
+        background:hsl(256, 72%, 54%);
         width:98vw;
         height: max-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 0px;
-        border-bottom-left-radius: 25px ;
+        border-radius: 0;
         border-bottom-right-radius:25px ;
-        background:hsl(256, 72%, 54%);
+        border-bottom-left-radius: 25px ;
         padding-top: 30px;
         text-align: center;
         flex: 1;
@@ -220,7 +218,7 @@ button {
         font-size: 54px;
     }
     .result .score p{
-        margin-top: -10px;
+        margin-top: -0px;
         color:darkgray;
     }
     .result .status {
@@ -238,6 +236,10 @@ button {
     }
     
     .summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         padding-left:30px;
         padding-right:30px;
         flex: 1;
@@ -308,10 +310,15 @@ button {
     .summary .score {
         font-weight: bold;
     }
-    
+    .summary .but{
+        display: flex;
+        width: 80vw;
+        justify-content: center;
+    }
+
     button {
         margin-top: 20px;
-        margin-left: 20px ;
+        margin-bottom: 20px;
         font-family:"Hanken Grotesk", sans-serif;
         padding: 10px 20px;
         font-size: 14px;
